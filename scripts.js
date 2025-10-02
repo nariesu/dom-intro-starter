@@ -32,3 +32,20 @@ for(let i = 0; i < colors.length; i++) {
 
 // In this section, select the first of the spans with the class "bold" and change the text color to the light blue color from our CSS (#7C9EA6).
 document.querySelector(".bold").style.color = "#7C9EA6";
+
+// For the first list item below, replace the text with some that says "this is new list item text." For the third list item below, add your name to the existing text, but wrap it in some strong tags.
+
+// returns a collection/array of all of the list items in the list with the class of content_list
+let listItems = document.querySelectorAll(".content_list li");
+
+// access just the first list item and replace the current text with "This is new list item text"
+listItems[0].textContent = "This is new list item text";
+
+// access the third list item and add your name in strong tags to the text that is already there (include a space so it displays correctly)
+listItems[2].innerHTML += "<strong> Prof. Barnett</strong>";
+
+
+// If you inspect the HTML or view the file, you can see that there is a link below that has the hidden attribute on it. Use JavaScript to remove that attribute so that you can see that element display on the page.
+
+// access the link inside of the section with an ID of remove and remove the hidden attribute so it is visible on the page
+document.querySelector("#remove a").removeAttribute("hidden");
